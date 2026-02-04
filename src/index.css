@@ -30,8 +30,24 @@ body {
 
 .container {
     padding: 24px;
+    background-color: var(--color-rose-50);
 
     h1 {
         font-size: var(--text-1-s);
     }
+}
+
+.decorative-line {
+    position: relative;
+}
+
+.decorative-line::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-rose-100);
+
+    position: absolute;
+    top: 0;
+    left: 0;
 }

@@ -6,7 +6,7 @@ export default function ProductList() {
     const image = "mobile";
 
     return (
-        <div>
+        <div className="grid gap-4">
             {data.map((item) => (
                 <ProductCard
                     key={item.name}

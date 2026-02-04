@@ -1,13 +1,15 @@
 import { useState } from "react";
 import ProductList from "./components/ProductList";
-import Cart from "./components/Cart";
+import ProductCart from "./components/ProductCart";
+import ConfirmnedPage from "./components/ConfirmnedPage";
 
 export default function App() {
     return (
         <div className="container">
-            <h1>Desserts</h1>
+            <h1 className="mb-8">Desserts</h1>
             <ProductList />
-            <Cart />
+            <ProductCart />
+            <ConfirmnedPage />
         </div>
     );
 }
